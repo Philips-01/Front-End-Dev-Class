@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">`
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 bg-info mt-5" style="border-radius: 10px;">
+                <h3 class="mt-4">Javascript Calculator</h3>
+                <div class="form-floating">
+                    <input type="text" class="form-control col-12" name="number1" id="number1" placeholder="Input number" >
+                    <label for="#">Number 1</label>
+                </div><br>
+                <div class="form-floating">
+                    <input type="text" class="form-control col-12" name="number2" id="number2" placeholder="Input number" >
+                    <label for="#">Number 2</label>
+                </div>
+
+                <div class="mt-3">
+                    <p class="text-dark px-2 bg-light form-control">Answer = <span id="answer">0</span></p>
+                </div>
+
+                <button class="btn btn-success mt-1" onclick="Add()">Add</button>
+                <button class="btn btn-warning mt-1" onclick="Subtract()">Subtract</button>
+                <button class="btn btn-danger mt-1" onclick="Multiply()">Multiply</button>
+                <button class="btn btn-secondary mt-1" onclick="Modulus()">Modulus</button>
+                <button class="btn btn-light mt-1" onclick="Divide()">Divide</button>
+                <button class="btn btn-dark mt-2 col-12" onclick="Answer()">Answer</button>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    
+
+
+    <script src="conditional.js"></script>
+</body>
+</html>
